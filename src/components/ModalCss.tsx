@@ -50,7 +50,8 @@ export default function ModalCss() {
 
   return (
     { isClient } && (
-      <AlertDialog>
+      <>
+            <AlertDialog>
         <AlertDialogTrigger className="p-2 px-4 bg-gray-200 hover:bg-gray-300 hover:scale-110 rounded-md text-slate-800">
           Voir le CSS
         </AlertDialogTrigger>
@@ -71,8 +72,14 @@ export default function ModalCss() {
             <AlertDialogAction>Fermer</AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>
-        <Toaster richColors />
+       
       </AlertDialog>
+      <span className="z-100">
+        <Toaster richColors />
+      </span>
+       
+      </>
+
     )
   );
 }

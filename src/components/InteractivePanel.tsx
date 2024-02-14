@@ -5,6 +5,8 @@ import ColorInput from "./inputs/ColorInput";
 import AddRemoveBtn from "./AddRemoveBtn";
 import Select from "./inputs/Select";
 import DisplayModal from "./DisplayModal";
+import ResetBtn from "./ResetBtn";
+
 
 export default function InteractivePanel() {
   const colors = useColorStore((state) => state.colors);
@@ -53,7 +55,8 @@ export default function InteractivePanel() {
         onChange={(e) => updateAngle(+e.target.value)}
       />
       {/* button to get the css code */}
-      <div className="flex justify-center items-center">
+      <div className="flex justify-between items-center">
+        <ResetBtn/>
         <DisplayModal/>
       </div>
     </>
