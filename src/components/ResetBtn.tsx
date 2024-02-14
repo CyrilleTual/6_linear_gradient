@@ -28,7 +28,7 @@ export default function ResetBtn() {
     <>
       <AlertDialog>
         <AlertDialogTrigger asChild>
-          <Button>Reset</Button>
+          <Button className="bg-red-600 hover:bg-red-700">Reset</Button>
         </AlertDialogTrigger>
         <AlertDialogContent>
           <AlertDialogHeader>
@@ -38,9 +38,12 @@ export default function ResetBtn() {
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
-            <AlertDialogCancel>Abandon</AlertDialogCancel>
-            <AlertDialogAction onClick={() => handleClick()}>
-                Reset
+            <AlertDialogCancel asChild>
+             
+              <Button className="bg-blue-600 hover:bg-blue-700">Abandon</Button>
+            </AlertDialogCancel>
+            <AlertDialogAction onClick={() => handleClick()} asChild>
+              <Button className="bg-red-600 hover:bg-red-700">Reset</Button>
             </AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>
