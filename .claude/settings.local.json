@@ -1,0 +1,6 @@
+{
+  "enabledMcpjsonServers": [
+    "mui-mcp"
+  ],
+  "enableAllProjectMcpServers": true
+}
